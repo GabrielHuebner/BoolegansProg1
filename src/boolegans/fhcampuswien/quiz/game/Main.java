@@ -1,4 +1,4 @@
-package sample;
+package boolegans.fhcampuswien.quiz.game;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

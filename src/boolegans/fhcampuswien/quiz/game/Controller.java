@@ -1,4 +1,4 @@
-package sample;
+package boolegans.fhcampuswien.quiz.game;
 
 public class Controller {
 

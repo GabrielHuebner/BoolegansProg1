@@ -18,36 +18,54 @@ public class Controller implements Initializable{
     @FXML
     private Button buttonA, buttonB, buttonC, buttonD;
 
-    public Controller(){
+    private boolean isATrue, isBTrue, isCTrue, isDTrue;
 
+    public Controller(){
+        isATrue = false;
+        isBTrue = false;
+        isCTrue = false;
+        isDTrue = false;
     }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
+        question.setText("Wo befindet sich der Kilimanjaro?");
+        answerA.setText("A: Amerika");
+        answerB.setText("B: Asien");
+        answerC.setText("C: Afrika");
+        answerD.setText("D: Europa");
+        isCTrue = true;
     }
 
     @FXML
-    public void buttonAaction(javafx.event.ActionEvent actionEvent) {
-        System.out.print("Wut");
-        buttonA.setStyle("-fx-background-color: green;");
+    public void buttonAAction(javafx.event.ActionEvent actionEvent) {
+        System.out.print("Apressed");
+        if(isATrue){
+            buttonA.setStyle("-fx-background-color: green;");
+        }
     }
 
     @FXML
-    public void buttonBaction(javafx.event.ActionEvent actionEvent) {
-        System.out.print("Wut");
-        buttonB.setStyle("-fx-background-color: red;");
+    public void buttonBAction(javafx.event.ActionEvent actionEvent) {
+        System.out.print("Bpressed");
+        if(isBTrue){
+            buttonB.setStyle("-fx-background-color: green;");
+        }
     }
 
     @FXML
-    public void buttonCaction(javafx.event.ActionEvent actionEvent) {
-        System.out.print("Wut");
-        buttonC.setStyle("-fx-background-color: blue;");
+    public void buttonCAction(javafx.event.ActionEvent actionEvent) {
+        System.out.print("Cpressed");
+        if(isCTrue){
+            buttonC.setStyle("-fx-background-color: green;");
+        }
     }
 
     @FXML
-    public void buttonDaction(javafx.event.ActionEvent actionEvent) {
-        System.out.print("Wut");
-        buttonD.setStyle("-fx-background-color: pink;");
+    public void buttonDAction(javafx.event.ActionEvent actionEvent) {
+        System.out.print("Dpressed");
+        if(isDTrue){
+            buttonD.setStyle("-fx-background-color: green;");
+        }
     }
 }
